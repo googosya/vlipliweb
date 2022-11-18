@@ -1,0 +1,349 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (min-width:1800px) {
+    .content {
+        width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 821px) and (max-width:1150px) {
+    #header {
+        width: 1150px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .details_complected {
+        flex: 1;
+        min-width: 345px;
+    }
+
+    .tShirt {
+        flex: 2;
+        min-width: 460px;
+    }
+
+    .options_complected {
+        flex: 3;
+        
+    }
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 821px) and (max-width:1150px) {
+    #header, .content {
+        width: 1150px;
+    }
+}
+
+/* Шапка */
+
+.left {
+    width: 33%;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-self: flex-start;
+    width: 33%;
+}
+
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 33%;
+}
+
+.top_buttons {
+    background: url('../img/newnews.gif');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6em;
+}
+
+/* Левые кнопки */
+
+#leftNav {
+    padding: 5px 10px 5px 10px;
+    margin-left: 5vw;
+    background-color: #989898;
+    border-radius: .375rem;
+    display: flex;
+    position: relative;
+}
+
+/* Кнопка "меню" */
+
+.menuBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    letter-spacing: 1px;
+    margin-right: 1em;
+}
+
+.menuBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuBtn:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+/* Раскрывающееся меню */
+
+.showMenu {
+    display: flex !important; 
+    position: absolute;
+    top: 99%;
+    z-index: 5;
+}
+
+.noAngle {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.openedMenu {
+    display: none;
+    flex-direction: column;
+    background: #989898;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.openedMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+.menuOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1em;
+    margin-right: 4em;
+}
+
+.menuOptions {
+    display: flex;
+    margin: 0 0 5px 10px;
+    padding-left: 5px;
+}
+
+.menuOptions:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+#glav {
+    margin-right: 0.65em;
+}
+
+#contacts {
+    margin-right: 0.1em;
+}
+
+#about {
+    margin-right: 1.8em;
+}
+
+/* Кнопка "магазин" */
+
+.shopBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 4px 1px 5px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.shopBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.shopBtn:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+/* Правые кнопки */
+
+#rightNav {
+    padding: 2px 10px 5px 10px;
+    margin: 0 2em 0 2em;
+    background-color: #989898;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.rightli {
+    font-size: 14px;
+    display: inline;
+    padding: 0px 4px 2px 5px;
+    margin-right: 1em;
+    font-weight: 100;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.rightli a {
+    text-decoration: none;
+    color: black;
+}
+
+.rightli:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+.rightli:last-of-type {
+   margin-right: 0;
+}
+
+/* Форма регистрации */
+
+.inputContainer {
+    position: relative;
+    margin-top: 2.5em;
+}
+
+.inputContainer input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px black solid;
+    display: block;
+    width: 100%;
+}
+
+.inputContainer input:-webkit-autofill, .inputContainer input:-webkit-autofill:hover, .inputContainer input:-webkit-autofill:focus, .inputContainer input:-webkit-autofill:active  {
+     box-shadow: 0 0 0 30px #989898 inset !important;
+}
+
+.regForm:last-of-type {
+    margin-bottom: 2em;
+}
+
+.inputContainer input:focus {
+    outline: 0;
+    border-bottom-color: #29FD2E
+}
+
+.inputContainer label {
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    z-index: -1;
+}
+
+.inputContainer label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.inputContainer input:focus + label span,
+.inputContainer input:valid + label span {
+    border-bottom-color: #29FD2E;
+    transform: translateY(-20px);
+    color: #29FD2E;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    box-shadow: -2px 8px 7px 1px rgb(255 255 255 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+/* Кнопка submit  */
+
+.submitBtn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    background-color: #29FD2E;
+    background-size: 200% auto;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: .375rem;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    border: 1px solid #ffffff82;
+}
+
+.submitBtn:hover {
+    box-shadow: -2px 8px 7px 1px rgb(255 255 255 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+.submitBtn:focus {
+    outline: 0;
+}
+
+.submitBtn:active {
+    transform: scale(0.98);
+}
+
+/* Нижняя навигация */
+
+.bottomNav {
+    display: none;
+}
+
+/* Регистрация */
+
+.openedLogin {
+    display: none;
+    flex-direction: column;
+    background: #989898;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.showLogin {
+    position: absolute;
+    display: flex !important;
+    z-index: 5;
+    top: 99%;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 1em 2em;
+}

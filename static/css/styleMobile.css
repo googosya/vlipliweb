@@ -1,0 +1,133 @@
+@media screen and (max-width: 820px) {
+    html {
+        height: 1500px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    /* Шапка */
+
+    .top_buttons {
+        background: none;
+    }
+
+    .left, .right {
+        display: none;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    /* Контент страницы */
+
+    .content {
+        flex-direction: column;
+    }
+
+    .details_complected {
+        order: 1;
+        width: 100%;
+    }
+
+    .options_complected {
+        order: 2;
+        width: 100%;
+    }
+
+    .options_complected h3 {
+        margin: 1em 0 1em 0;
+        justify-content: normal;
+        font-size: 1.3em;
+    }
+
+    /* Футболка */
+
+    .tShirt {
+        order: 0;
+        width: 100%;
+        margin: 0;
+        margin-top: 10vh;
+    }
+
+    /* Описание товара */
+
+    .details {
+        margin: 0 1em 1em 1em;
+    }
+
+    /* Часть с выбором размера */
+
+    .options {
+        margin: 0 1em;
+    }
+
+    /* Нижняя навигация */
+
+    .bottomNav {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        margin: 2em 1em 2em 1em;
+        background: url('../img/newnews.gif');
+        position: fixed;
+        bottom: 0;
+        width: 90%;
+    }
+
+    .navUl {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navLi a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navLi {
+        display: inline;
+        padding: 0 0 0 10vw;
+        font-weight: 600;
+    }
+
+    .navUl :first-child {
+        padding-left: 0;
+    }
+
+    /* Кнопки с размерами */
+
+    .tab {
+        font-size: 20px;
+        border-radius: 0.5em;
+        font-weight: bold;
+    }
+
+    /* Выбор количества */
+    
+    .quantity {
+        margin-top: 2em;
+        height: 3.5em;
+    }
+
+    .quantity_buttons {
+        font-size: 25px;
+    }
+
+    .q-btn-set {
+        font-size: 30px;
+    }
+
+    /* Кнопка добавления в корзину */
+
+    .cartButton {
+        font-size: 1.3em;
+    }
+
+}

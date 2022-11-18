@@ -1,0 +1,277 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+@media screen and (min-width: 821px) and (max-width:1150px) {
+    #header, .content {
+        width: 1150px;
+    }
+}
+
+/* Шапка */
+
+.left {
+    display: flex;
+    width: 33%;
+}
+
+.logo {
+    display: flex;
+    align-self: flex-start;
+    width: 33%;
+}
+
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 33%;
+}
+
+.top_buttons {
+    background: url('../img/newnews.gif');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6em;
+}
+
+/* Левые кнопки */
+
+#leftNav {
+    padding: 5px 10px 5px 10px;
+    margin-left: 5vw;
+    background-color: #989898;
+    border-radius: .375rem;
+    display: flex;
+    position: relative;
+}
+
+/* Кнопка "меню" */
+
+.menuBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    letter-spacing: 1px;
+    margin-right: 1em;
+}
+
+.menuBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuBtn:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+/* Раскрывающееся меню */
+
+.showMenu {
+    display: flex !important;
+    position: absolute;
+    top: 99%;
+    z-index: 5;
+}
+
+.noAngle {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.openedMenu {
+    display: none;
+    flex-direction: column;
+    background: #989898;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: fit-content;
+}
+
+.openedMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+.menuOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1em;
+    margin-right: 4em;
+}
+
+.menuOptions {
+    display: flex;
+    margin: 0 0 5px 10px;
+    padding-left: 5px;
+}
+
+.menuOptions:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+#glav {
+    margin-right: 0.65em;
+}
+
+#contacts {
+    margin-right: 0.1em;
+}
+
+#about {
+    margin-right: 1.8em;
+}
+
+/* Кнопка "магазин" */
+
+.shopBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 4px 1px 5px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.shopBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.shopBtn:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+/* Правые кнопки */
+
+#rightNav {
+    padding: 2px 10px 5px 10px;
+    margin: 0 2em 0 2em;
+    background-color: #989898;
+    border-radius: .375rem;
+    box-sizing: border-box;
+}
+
+.rightli {
+    font-size: 14px;
+    display: inline;
+    padding: 0px 4px 2px 5px;
+    margin-right: 1em;
+    font-weight: 100;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.rightli a {
+    text-decoration: none;
+    color: black;
+}
+
+.rightli:hover {
+    background-color: #29FD2E;
+    border-radius: .375rem;
+}
+
+.rightli:last-of-type {
+   margin-right: 0;
+}
+
+/* Нижняя навигация */
+
+.bottomNav {
+    display: none;
+}
+
+/* Скролл контейнер */
+
+.feedContainer {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 3.6em);
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.feedContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Блок с контентом */
+
+.feedBlock {
+    background: url(../img/test3.jpg);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+}
+
+.test {
+    background: url('../img/test2.jpg');
+}
+
+.test2 {
+    background: url('../img/test1.jpg')
+}
+
+/* Градиент */
+
+.shadow {
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgb(0, 0, 0, 0));
+    opacity: 0.9;
+    width: 100%;
+}
+
+/* Описание */
+
+.infoContainer {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.infoContainer h2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
+}
+
+/* Кнопка */
+
+.aboutBtn {
+    display: flex;
+    background-color: #29FD2E;
+    border-radius: 25px;
+    padding: 0.5em;
+    padding: 0.3em 1em;
+    border-radius: 0.375rem;
+}
+
+.aboutBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btnContainer {
+    display: flex;
+}

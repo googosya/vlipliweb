@@ -1,0 +1,242 @@
+/* Нижняя навигация */
+
+.bottomNav {
+    display: none;
+}
+
+/* Контент страницы */
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details_complected {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.options_complected {
+    width: 30%;
+}
+
+/* Описание товара */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.details h3 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.details h1 {
+    margin-top: 0;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5em;
+}
+
+
+.details h3:last-of-type {
+    margin-bottom: 0.3em;
+}
+
+.par {
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Кнопка "читать еще" */
+
+#moreBtn {
+    display: flex;
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+#moreBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnBorder {
+    margin-top: 1em;
+    padding: 0.15em 0.5em 0.15em 0.5em;
+    border: solid 1px white;
+    border-radius: 0.6rem;
+}
+
+.moreBtnCl {
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(41, 253, 46, 1) inset;
+    -moz-box-shadow: 0px 1px 1px 0px rgba(41, 253, 46, 1) inset;
+    box-shadow: 0px 1px 1px 0px rgba(41, 253, 46, 1) inset;
+    border-radius: 0.6rem;
+    border-color: #29FD2E !important;
+    font-size: 0.95em !important;
+    border-bottom: black !important;
+    border-left: black !important;
+    transition: 0.035s;
+}
+
+/* Футболка */
+
+.tShirt {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+/* Часть с выбором размера */
+
+.options_complected {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options_complected h3 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    /* margin: 2.5em;
+    margin-right: 2em;
+    margin-top: 20vh; */
+}
+
+/* Выбор размера */
+
+.sizes {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    color: black;
+}
+
+.sizes div:last-of-type {
+    margin-right: 0;
+}
+
+/* Кнопки с размерами */
+
+.tab {
+    margin-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2em;
+    height: 1.4em;
+    background-color: #989898;
+    border-radius: .45rem;
+    cursor: pointer;
+}
+
+.tab-active {
+    background-color: #29FD2E;
+}
+
+/* Выбор количества */
+
+.quantity {
+    display: inline-flex;
+    margin-top: 1em;
+    justify-content: space-between;
+    border: solid 1px;
+    border-radius: 10px;
+    height: 2.5em;
+}
+
+.quantity p:first-child {
+    padding-left: 1em;
+}
+
+ .quantity p:last-child {
+    padding-right: 1em;
+}
+
+.quantity_buttons {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* кнопки + - */
+
+.q-btn-set {
+    font-size: 25px;
+    width: 20px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-family: ui-serif;
+}
+
+.q-btn-set:hover {
+    font-size: 30px;
+    font-weight: bold;
+    color: #29FD2E;
+}
+
+/* Количество */
+
+#num {
+    width: calc(100% - 130px);
+    display: flex;
+    justify-content: center;
+}
+
+/* Кнопка добавления в корзину */
+
+.cartButton {
+    margin-top: 2em;
+    justify-content: space-between;
+    background-color: #29FD2E;
+    padding: 5px 10px;
+    text-align: center;
+    background-size: 200% auto;
+    color: #fffffff0;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2); 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: flex;
+    border: 1px solid #ffffff82;
+}
+
+.cartButton:hover {
+    box-shadow: -2px 8px 7px 1px rgb(255 255 255 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+.cartButton p {
+    color: black;
+}
+
+.cartButton p:first-child {
+    padding-left: 0.5em;
+}
+
+.cartButton p:last-child {
+    padding-right: 0.5em;
+}
